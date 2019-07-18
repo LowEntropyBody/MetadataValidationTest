@@ -1,0 +1,43 @@
+name: MetadataValidationTest
+product: MSDN
+files:
+  - MetadataValidationTest/**/*.md
+  - MetadataValidationTest/**/*.png
+  - MetadataValidationTest/**/*.jpg
+exclude:
+  - MetadataValidationTest/**/obj/**
+  - MetadataValidationTest/**/includes/**
+  - MetadataValidationTest/_themes/**
+  - MetadataValidationTest/_themes.pdf/**
+  - MetadataValidationTest/**/docfx.json
+  - MetadataValidationTest/README.md
+  - MetadataValidationTest/LICENSE
+  - MetadataValidationTest/LICENSE-CODE
+  - MetadataValidationTest/ThirdPartyNotices
+output:
+  pdf: false
+  copyResources: false
+baseUrl: 'https://ppe.docs.microsoft.com/base_path'
+documentId:
+  sourceBasePath: MetadataValidationTest
+  depotMappings: {}
+  directoryMappings: {}
+globalMetadata:
+  feedback_system: None
+  open_to_public_contributors: true
+routes:
+  MetadataValidationTest/: .
+monikerRange: {}
+rules:
+  circular-reference: error
+  include-not-found: error
+contribution:
+  excludedContributors: []
+  repository: 'https://github.com/LowEntropyBody/MetadataValidationTest#master'
+template: 'https://github.com/Microsoft/templates.docs.msft#master'
+dependencies: {}
+resolveAlias:
+  '~': MetadataValidationTest
+fileMetadata: {}
+redirections: {}
+redirectionsWithoutId: {}
